@@ -2153,7 +2153,7 @@ input[type="radio"] + label:before {
   border-radius: 0.35em;
   content: "";
   display: block;
-  height: 100%;
+  height: 100]%;
   left: 0;
   opacity: 0.5;
   position: absolute;
@@ -2222,7 +2222,7 @@ input[type="radio"] + label:before {
 
 .image.left img,
 .image.right img {
-  width: 100%;
+  width: 80%;
 }
 
 .image.fit {
