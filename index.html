@@ -35,62 +35,52 @@
 			<header class="major">
 				<h2>About</h2>
 			</header>
+			
 			<p>
-				<span class="image left"><img src="images/nz_teaching.jpg" alt="" /></span>
-				Growing up in a family of educators, the importance of learning was deeply ingrained in me. 	
-				When I attended the University of Iowa, I followed in my mom's footsteps with a keen 
-				interest in elementary education. After graduation, I embarked on my professional career as a 5th grade teacher in Raleigh, North Carolina. 
-				Teaching 10 year-olds at the age of twenty-one presented its challenges, but it was these same challenges that spurred my personal and professional growth.
-				Over the course of five years, I dedicated myself to the classroom and achieved some excellent things with the students and families I had the pleasure of working with. 
+				Education was my foundation, but technology has always been my passion. After years of shaping young minds in the classroom, I took a leap of faith to follow my heart into software development. With each project I tackle, I find new ways to grow and push the boundaries of my abilities. Whether it’s crafting intuitive user interfaces with React or mastering backend technologies like C#/.NET, my journey in tech is a constant pursuit of knowledge and innovation.
 				<br><br>
-			
-				<span class="image right"><img src="images/teaching.jpg" alt="" /></span>
-				The onset of the pandemic was a decisive time for me, and ultimately my career path. After some consideration, I knew I needed to pursue my aspirations 
-				of becoming a software developer and commit to a new career path. I had fond memories of my JavaScript programming classes in high school, was 
-				nearly a computer science major to begin with. It was a difficult decision to leave behind my 
-				budding teaching career, but I knew I needed to explore my other professional interest.
-				<br><br>
-
-				<span class="image left"><img src="images/amsterdam.jpg" alt="" /></span>
-				Enrolling in the Actualize Coding Bootcamp proved to be a 
-				transformative experience. In just months, I absorbed more knowledge than I thought possible. When I joined Root16 Tech Consulting, 
-				 I honed my skills by developing web applications with technologies like React, TypeScript, and JavaScript. Additionally, I 
-				delved into backend systems, working extensively with C#/.NET Core and Node.js. My time there not only solidified my passion for software
-				 development but also equipped me with the expertise to tackle complex projects. Now, as I continue to evolve in this dynamic field, I'm driven 
-				 by the challenges and opportunities that come with the landscape of software development.
-
+				<span id="read-more-link" onclick="toggleReadMore(event)">Read More</span>
 			</p>
-			
-			<ul class="actions">
-				<!--<li><a href="#" class="button">Learn More</a></li>-->
-			</ul>
+		
+			<div id="more-content" style="display: none;">
+				<p class="content">
+					<span class="image right"><img src="images/teaching.jpg" alt="" /></span>
+					During the pandemic, I reignited my interest in coding, enrolling in Actualize Coding Bootcamp. It was there that I developed a solid foundation in full-stack development. At Root16, I worked on both frontend and backend projects, honing my ability to build scalable applications and improving my skills in technologies like React, TypeScript, and Node.js.
+					<br><br>
+		
+					<span class="image left"><img src="images/amsterdam.jpg" alt="" /></span>
+					Today, I continue to push myself by exploring new technologies and developing personal projects to expand my expertise. I thrive in the dynamic nature of software development, constantly learning and adapting to new tools and frameworks. The challenges I face keep me excited about the opportunities for growth and innovation in this field.
+				</p>
+			</br>
+				<!-- Read Less button inside expanded content -->
+				<span id="read-less-link" onclick="toggleReadMore(event)">Read Less</span>
+			</div>
 		</section>
-		
-		
 		<section id="two">
 		
 			<h2>Recent Work</h2>
 			<div class="row">
 				<article class="col-6 col-12-xsmall work-item">
-					<a href="images/Spotifilter.png" class="image fit thumb"><img src="images/Spotifilter.png" alt="" /></a>
-					<h3><a href="https://spotifilter.netlify.app/" alt="Spotifilter Landing Page" >SpotiFilter Live Demo</a></h3>
-					<p>Filters Spotify playlists based on chosen characteristic.</p>
+					<div class="image fit thumb"><img src="images/workopia.PNG" alt="" /></div>
+					<h3><a href="https://workopia.jackwhisler.com/" alt="Workopia" >Workopia</a></h3>
+					<p>Full CRUD capability, built using vanilla PHP and structured like a professional job search application.</p>
 				</article>
 				<article class="col-6 col-12-xsmall work-item">
-					<a href="images/drum_machine.png" class="image fit thumb"><img src="images/drum_machine.png" alt="" /></a>
+					<div class="image fit thumb"><img src="images/Spotifilter.png" alt="" /></div>
+					<h3><a href="https://spotifilter.netlify.app/" alt="Spotifilter Landing Page" >SpotiFilter Live Demo</a></h3>
+					<p>Filters Spotify playlists based on chosen characteristic.</p>
+				</article>				
+				<article class="col-6 col-12-xsmall work-item">
+					<div class="image fit thumb"><img src="images/drum_machine.png" alt="" /></div>
 					<h3><a href="https://drum-machine-2022.netlify.app/" alt="Drum Machine" >Drum Machine</a></h3>
 					<p>A drum machine made with Vue.js.</p>
 				</article>
 				<article class="col-6 col-12-xsmall work-item">
-					<a href="images/framework_watcher.png" class="image fit thumb"><img src="images/framework_watcher.png" alt="" /></a>
+					<div class="image fit thumb"><img src="images/framework_watcher.png" alt="" /></div>
 					<h3><a href="https://github-framework-watcher.netlify.app/" alt="Framework Watcher" >GitHub Framework Watcher</a></h3>
 					<p>Simple framework popularity analysis using GitHub API</p>
 				</article>
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="images/rhcp.png" class="image fit thumb"><img src="images/rhcp.png" alt="" /></a>
-					<h3><a href="https://redhottakes.netlify.app/" alt="RedHotTakes" >Red Hot Takes (in progress)</a></h3>
-					<p>A place for podcast rankings of Red Hot Chili Peppers songs.</p>
-				</article>
+
 
 			</div>	
 			<br>
@@ -484,7 +474,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				</ul>
 			</div>
 		</footer>
-
+		
 		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.poptrox.min.js"></script>
@@ -492,6 +482,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script src="assets/js/readMore.js"></script>
 
 </body>
 

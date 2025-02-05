@@ -118,6 +118,7 @@ section {
 
 body {
   line-height: 1;
+  caret-color: transparent;
 }
 
 ol,
@@ -177,6 +178,33 @@ html {
 *:after {
   box-sizing: inherit;
 }
+section#one p {
+  /* max-width: 900px; */
+  margin: 0 auto;
+  /* text-align: justify; */
+}
+
+#more-content {
+  margin-top: 20px;
+}
+
+#read-more-link,
+#read-less-link {
+  color: #666666; /* Dark gray */
+  cursor: pointer;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+#read-more-link:hover,
+#read-less-link:hover {
+  color: #444444; /* Darker gray on hover */
+}
+
+.image img {
+  cursor: default !important;
+}
+/**Customizations */
 
 body {
   background: #fff;
@@ -2153,7 +2181,7 @@ input[type="radio"] + label:before {
   border-radius: 0.35em;
   content: "";
   display: block;
-  height: 100]%;
+  height: 100%;
   left: 0;
   opacity: 0.5;
   position: absolute;
@@ -2165,7 +2193,7 @@ input[type="radio"] + label:before {
   text-align: center;
 }
 
-.image.thumb:after {
+/* .image.thumb:after {
   -moz-transition: opacity 0.2s ease-in-out;
   -webkit-transition: opacity 0.2s ease-in-out;
   -ms-transition: opacity 0.2s ease-in-out;
@@ -2187,7 +2215,7 @@ input[type="radio"] + label:before {
   text-decoration: none;
   top: 50%;
   white-space: nowrap;
-}
+} */
 
 .image.thumb:hover:after {
   opacity: 1;
@@ -2205,13 +2233,13 @@ input[type="radio"] + label:before {
 
 .image.left {
   float: left;
-  margin: 0 1.5em 1em 0;
+  margin: 0 0 1em 0;
   top: 0.25em;
 }
 
 .image.right {
   float: right;
-  margin: 0 0 1em 1.5em;
+  margin: 0 0 0 4.5em;
   top: 0.25em;
 }
 
@@ -2222,7 +2250,7 @@ input[type="radio"] + label:before {
 
 .image.left img,
 .image.right img {
-  width: 80%;
+  width: 70%;
 }
 
 .image.fit {
@@ -2540,10 +2568,14 @@ input[type="button"],
   -webkit-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
   background-color: transparent;
   border-radius: 0.35em;
   border: solid 3px #efefef;
