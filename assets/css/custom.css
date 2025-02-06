@@ -1,0 +1,39 @@
+/**Customizations */
+section#one p {
+  /* max-width: 900px; */
+  margin: 0 auto;
+  /* text-align: justify; */
+}
+
+#more-content {
+  margin-top: 20px;
+}
+
+#read-more-link,
+#read-less-link {
+  color: #666666; /* Dark gray */
+  cursor: pointer;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+#read-more-link:hover,
+#read-less-link:hover {
+  color: #444444; /* Darker gray on hover */
+}
+
+.image img {
+  cursor: default !important;
+}
+
+.tech-stack-large {
+  width: 5rem;
+  height: 5rem;
+  margin-right: 2rem;
+}
+
+.tech-stack-small {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 1rem;
+}

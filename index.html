@@ -5,116 +5,174 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-
-<head>
-	<title>Jack Whisler</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="icon" href="./images/favicon.ico" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-</head>
-
-<body>
-
-	<!-- Header -->
-	<header id="header">
-		<div class="inner">
-			<a href="#" class="image avatar"><img src="images/headshot.jpg" alt="" /></a>
-			<h1><strong>Jack Whisler</strong></h1>
-			<p>Software Engineer</p>
-			
-			</header>
-		</div>
-	</header>
-
-	<!-- Main -->
-	<div id="main">
-
-		<!-- One -->
-		<section id="one">
-			<header class="major">
-				<h2>About</h2>
-			</header>
-			
-			<p>
-				Education was my foundation, but technology has always been my passion. After years of shaping young minds in the classroom, I took a leap of faith to follow my heart into software development. With each project I tackle, I find new ways to grow and push the boundaries of my abilities. Whether it’s crafting intuitive user interfaces with React or mastering backend technologies like C#/.NET, my journey in tech is a constant pursuit of knowledge and innovation.
-				<br><br>
-				<span id="read-more-link" onclick="toggleReadMore(event)">Read More</span>
-			</p>
-		
-			<div id="more-content" style="display: none;">
-				<p class="content">
-					<span class="image right"><img src="images/teaching.jpg" alt="" /></span>
-					During the pandemic, I reignited my interest in coding, enrolling in Actualize Coding Bootcamp. It was there that I developed a solid foundation in full-stack development. At Root16, I worked on both frontend and backend projects, honing my ability to build scalable applications and improving my skills in technologies like React, TypeScript, and Node.js.
-					<br><br>
-		
-					<span class="image left"><img src="images/amsterdam.jpg" alt="" /></span>
-					Today, I continue to push myself by exploring new technologies and developing personal projects to expand my expertise. I thrive in the dynamic nature of software development, constantly learning and adapting to new tools and frameworks. The challenges I face keep me excited about the opportunities for growth and innovation in this field.
-				</p>
-			</br>
-				<!-- Read Less button inside expanded content -->
-				<span id="read-less-link" onclick="toggleReadMore(event)">Read Less</span>
-			</div>
-		</section>
-		<section id="two">
-		
-			<h2>Recent Work</h2>
-			<div class="row">
-				<article class="col-6 col-12-xsmall work-item">
-					<div class="image fit thumb"><img src="images/workopia.PNG" alt="" /></div>
-					<h3><a href="https://workopia.jackwhisler.com/" alt="Workopia" >Workopia</a></h3>
-					<p>Full CRUD capability, built using vanilla PHP and structured like a professional job search application.</p>
-				</article>
-				<article class="col-6 col-12-xsmall work-item">
-					<div class="image fit thumb"><img src="images/Spotifilter.png" alt="" /></div>
-					<h3><a href="https://spotifilter.netlify.app/" alt="Spotifilter Landing Page" >SpotiFilter Live Demo</a></h3>
-					<p>Filters Spotify playlists based on chosen characteristic.</p>
-				</article>				
-				<article class="col-6 col-12-xsmall work-item">
-					<div class="image fit thumb"><img src="images/drum_machine.png" alt="" /></div>
-					<h3><a href="https://drum-machine-2022.netlify.app/" alt="Drum Machine" >Drum Machine</a></h3>
-					<p>A drum machine made with Vue.js.</p>
-				</article>
-				<article class="col-6 col-12-xsmall work-item">
-					<div class="image fit thumb"><img src="images/framework_watcher.png" alt="" /></div>
-					<h3><a href="https://github-framework-watcher.netlify.app/" alt="Framework Watcher" >GitHub Framework Watcher</a></h3>
-					<p>Simple framework popularity analysis using GitHub API</p>
-				</article>
-
-
-			</div>	
-			<br>
-
-			<ul class="actions">
-				<li><a href="work-journal.html" class="button">Check out my Work Journal!</a></li>
-			
-				<li><a href="https://drive.google.com/file/d/1JFw2RTTlNmSMR3A8lr3CQsEeKfN2odBV/view?usp=sharing"  target="_blank" class="button">SpotiFilter App Presentation</a></li>
-			</ul>
-		</section>
-
-		<!-- Three -->
-		<section id="three">
-
-			<h2>Get In Touch</h2>
-			<p>Looking to get in touch? Send me an email or connect with me on LinkedIn! </p>
-			<div class="row">
-			
-				<div class="col-4 col-12-small">
-					<ul class="labeled-icons">
-						<li>
-							<h3 class="icon solid fa-home"><span class="label">Location</span></h3>
-							Chicago, IL
-						<li>
-							<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-							<a href="#">whisler1@gmail.com</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-
-		<!-- Four -->
-		<!--
+    <head>
+        <title>Jack Whisler</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link rel="icon" href="./images/favicon.ico">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/custom.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="image avatar">
+                    <img src="images/headshot.jpg" alt="">
+                </a>
+                <h1>
+                    <strong>Jack Whisler</strong>
+                </h1>
+                <p>Software Engineer</p>
+            </header>
+        </div>
+    </header>
+    <!-- Main -->
+    <div id="main">
+        <!-- One -->
+        <section id="one">
+            <header class="major">
+                <h2>About</h2>
+            </header>
+            <p>
+                Education was my foundation, but technology has always been my passion. After years of shaping young minds in the classroom, I took a leap of faith to follow my heart into software development. With each project I tackle, I find new ways to grow and push the boundaries of my abilities. Whether it’s crafting intuitive user interfaces with React or mastering backend technologies like C#/.NET, my journey in tech is a constant pursuit of knowledge and innovation.
+                <br>
+                <br>
+                <span id="read-more-link" onclick="toggleReadMore(event)">Read More</span>
+            </p>
+            <div id="more-content" style="display: none;">
+                <p class="content">
+                    <span class="image right">
+                        <img src="images/teaching.jpg" alt="">
+                    </span>
+                    During the pandemic, I reignited my interest in coding, enrolling in Actualize Coding Bootcamp. It was there that I developed a solid foundation in full-stack development. At Root16, I worked on both frontend and backend projects, honing my ability to build scalable applications and improving my skills in technologies like React, TypeScript, and Node.js.
+                    <br>
+                    <br>
+                    <span class="image left">
+                        <img src="images/amsterdam.jpg" alt="">
+                    </span>
+                    Today, I continue to push myself by exploring new technologies and developing personal projects to expand my expertise. I thrive in the dynamic nature of software development, constantly learning and adapting to new tools and frameworks. The challenges I face keep me excited about the opportunities for growth and innovation in this field.
+                </p>
+                </br>
+                <!-- Read Less button inside expanded content -->
+                <span id="read-less-link" onclick="toggleReadMore(event)">Read Less</span>
+            </div>
+        </section>
+        <section id="two">
+            <h2>Tech Stack</h2>
+            <div class="row">
+                <article class="col-12 col-12-xsmall work-item">
+                    <img class="tech-stack-large" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg">
+                    <img class="tech-stack-large" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg">
+                    <img class="tech-stack-large" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg">
+                    <img class="tech-stack-large" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg">
+                    <img class="tech-stack-large" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg">
+                    <img class="tech-stack-large" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg">
+                </article>
+                <div class="row">
+                    <article id="frontend" class="col-12 col-12-xsmall">
+                        <img class="tech-stack-small" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg">
+                        <img class="tech-stack-small" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-plain-wordmark.svg">
+                        <img class="tech-stack-small" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg">
+                        <img class="tech-stack-small" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactbootstrap/reactbootstrap-original.svg">
+                        <img class="tech-stack-small" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg">
+                        <img class="tech-stack-small" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg">
+                        <img class="tech-stack-small" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original-wordmark.svg">
+                        <img class="tech-stack-small" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mocha/mocha-original.svg">
+                        <img class="tech-stack-small" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/playwright/playwright-original.svg">
+                    </article>
+                </div>
+                <div class="row">
+                    <article id="backend" class="col-6 col-6-xsmall">
+                        <img class="tech-stack-small" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg">
+                        <img class="tech-stack-small" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original-wordmark.svg">
+                        <img class="tech-stack-small" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original-wordmark.svg">
+                        <img class="tech-stack-small" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original-wordmark.svg">
+                    </article>
+                    <article id="databases" class="col-6 col-6-xsmall">
+                        <img class="tech-stack-small" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original-wordmark.svg">
+                        <img class="tech-stack-small" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg">
+                        <img class="tech-stack-small" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg">
+                        <img class="tech-stack-small" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg">
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="three">
+            <h2>Recent Work</h2>
+            <div class="row">
+                <article class="col-6 col-12-xsmall work-item">
+                    <div class="image fit thumb">
+                        <img src="images/workopia.PNG" alt="">
+                    </div>
+                    <h3>
+                        <a href="https://workopia.jackwhisler.com/" alt="Workopia">Workopia</a>
+                    </h3>
+                    <p>Full CRUD capability, built using vanilla PHP and structured like a professional job search application.</p>
+                </article>
+                <article class="col-6 col-12-xsmall work-item">
+                    <div class="image fit thumb">
+                        <img src="images/Spotifilter.png" alt="">
+                    </div>
+                    <h3>
+                        <a href="https://spotifilter.netlify.app/" alt="Spotifilter Landing Page">SpotiFilter Live Demo</a>
+                    </h3>
+                    <p>Filters Spotify playlists based on chosen characteristic.</p>
+                </article>
+                <article class="col-6 col-12-xsmall work-item">
+                    <div class="image fit thumb">
+                        <img src="images/drum_machine.png" alt="">
+                    </div>
+                    <h3>
+                        <a href="https://drum-machine-2022.netlify.app/" alt="Drum Machine">Drum Machine</a>
+                    </h3>
+                    <p>A drum machine made with Vue.js.</p>
+                </article>
+                <article class="col-6 col-12-xsmall work-item">
+                    <div class="image fit thumb">
+                        <img src="images/framework_watcher.png" alt="">
+                    </div>
+                    <h3>
+                        <a href="https://github-framework-watcher.netlify.app/" alt="Framework Watcher">GitHub Framework Watcher</a>
+                    </h3>
+                    <p>Simple framework popularity analysis using GitHub API</p>
+                </article>
+            </div>
+            <br>
+            <ul class="actions">
+                <li>
+                    <a href="work-journal.html" class="button">Check out my Work Journal!</a>
+                </li>
+                <li>
+                    <a href="https://drive.google.com/file/d/1JFw2RTTlNmSMR3A8lr3CQsEeKfN2odBV/view?usp=sharing" target="_blank" class="button">SpotiFilter App Presentation</a>
+                </li>
+            </ul>
+        </section>
+        <!-- Three -->
+        <section id="three">
+            <h2>Get In Touch</h2>
+            <p>Looking to get in touch? Send me an email or connect with me on LinkedIn!</p>
+            <div class="row">
+                <div class="col-4 col-12-small">
+                    <ul class="labeled-icons">
+                        <li>
+                            <h3 class="icon solid fa-home">
+                                <span class="label">Location</span>
+                            </h3>
+                            Chicago, IL
+                            <li>
+                                <h3 class="icon solid fa-envelope">
+                                    <span class="label">Email</span>
+                                </h3>
+                                <a href="#">whisler1@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Four -->
+            <!--
 		<section id="four">
 			<h2>Elements</h2>
 
@@ -457,33 +515,35 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 	</div>
 -->
-		<!-- Footer -->
-		<footer id="footer">
-			<div class="inner">
-
-				<ul class="icons">
-					<li><a href="https://github.com/jackwhisler1" target="_blank" class="icon brands fa-github"><span
-								class="label">Github</span></a>
-					</li>
-					<li><a href="https://www.linkedin.com/in/jackwhisler/" target="_blank" class="icon brands fa-linkedin"><span
-								class="label">LinkedIn</span></a>
-					</li>
-					<li><a href="mailto:whisler1@gmail.com" target="_blank" class="icon solid fa-envelope"><span
-								class="label">Email</span></a>
-					</li>
-				</ul>
-			</div>
-		</footer>
-		
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.poptrox.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-		<script src="assets/js/readMore.js"></script>
-
-</body>
-
-</html>
+            <!-- Footer -->
+            <footer id="footer">
+                <div class="inner">
+                    <ul class="icons">
+                        <li>
+                            <a href="https://github.com/jackwhisler1" target="_blank" class="icon brands fa-github">
+                                <span class="label">Github</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/jackwhisler/" target="_blank" class="icon brands fa-linkedin">
+                                <span class="label">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:whisler1@gmail.com" target="_blank" class="icon solid fa-envelope">
+                                <span class="label">Email</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+            <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.poptrox.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+            <script src="assets/js/readMore.js"></script>
+        </body>
+    </html>
